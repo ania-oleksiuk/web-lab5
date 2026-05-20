@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Резюме — Олексюк Анна, студентка" />
+  <meta name="author" content="Олексюк Анна" />
+  <title>CV — Олексюк Анна</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+</head>
+<body>
+
+  <header>
+     <button id="theme-toggle" style="float:right;">🌙 Темна тема</button>
+  <h1>Олексюк Анна</h1>
+  <p>Студентка · Кібербезпека та захист інформації</p>
+  <address>
+    <a href="mailto:anna.oleksiuk.kb.2023@lpnu.ua">anna.oleksiuk.kb.2023@lpnu.ua</a> |
+    <a href="https://github.com/ania-oleksiuk" target="_blank">github.com/ania-oleksiuk</a>
+  </address>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Освіта</h2>
+
+      <article>
+        <h3>Бакалавр — Кібербезпека та захист інформації</h3>
+        <p><strong>Університет «Львівська Політехніка»</strong></p>
+        <p><time datetime="2023-09">Вересень 2023</time> — <time datetime="2027-06">Червень 2027</time> (очікується)</p>
+      </article>
+
+      <article>
+        <h3>Середня освіта</h3>
+        <p><strong>Меденицька СЗШ</strong></p>
+        <p>Закінчила <time datetime="2023-06">2023</time></p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Досвід роботи</h2>
+
+      <article>
+        <h3>Front-End розробник</h3>
+        <p><strong>Стажування</strong></p>
+        <p><time datetime="2024-09">Вересень 2024</time> — <time datetime="2024-12">Грудень 2024</time></p>
+        <ul>
+          <li>Верстка вебсторінок на HTML та CSS</li>
+          <li>Розробка інтерактивних елементів на JavaScript</li>
+          <li>Робота з Git та командою розробників</li>
+        </ul>
+      </article>
+    </section>
+
+    <section>
+      <h2>Навички</h2>
+      <ul>
+        <li>HTML5 / CSS3</li>
+        <li>JavaScript (базовий рівень)</li>
+        <li>Git / GitHub</li>
+        <li>Основи кібербезпеки</li>
+        <li>Linux (базовий рівень)</li>
+        <li>Англійська мова — B1</li>
+      </ul>
+    </section>
+
+    <section id="reviews">
+      <h2>Відгуки</h2>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© <time datetime="2025">2025</time> Олексюк Анна</p>
+  </footer>
+
+  <div id="modal" style="display:none; position:fixed; inset:0;
+    background:rgba(0,0,0,0.6); justify-content:center; align-items:center;">
+    <div style="background:white; padding:2rem; max-width:400px; width:100%; position:relative;">
+      <button id="close-btn" style="position:absolute; top:1rem; right:1rem; font-size:1.2rem; background:none; border:none; cursor:pointer;">×</button>
+      <h3>Зв'язок зі мною</h3>
+      <form action="https://formspree.io/f/ВАШ_ENDPOINT" method="POST"
+        style="display:flex; flex-direction:column; gap:0.8rem;">
+        <input type="text"  name="name"    placeholder="Ім'я"    required />
+        <input type="email" name="email"   placeholder="Email"   required />
+        <input type="tel"   name="phone"   placeholder="Телефон" />
+        <textarea           name="message" placeholder="Повідомлення" rows="4"></textarea>
+        <button type="submit">Відправити</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
